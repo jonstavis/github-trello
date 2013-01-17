@@ -1,5 +1,6 @@
 <?php
 require('config.php');
+require('core.php');
 function getUnits($i) {
 	if ($i == 1) {
 		return "file";
