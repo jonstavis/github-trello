@@ -4,7 +4,7 @@ class Trello {
 	protected $apikey;
 	protected $token;
 	public $apiBase = 'https://api.trello.com';
-	function __construct ( $apikey , $token, ) {
+	function __construct ( $apikey , $token ) {
 		$this->apikey 				= $apikey;
 		$this->token 				= $token;
 	}
