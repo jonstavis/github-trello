@@ -4,16 +4,15 @@ class Trello {
 	protected $apikey;
 	protected $token;
 	public $apiBase = 'https://api.trello.com';
-	function __construct ( $apikey , $token, $organization_id ) {
+	function __construct ( $apikey , $token, ) {
 		$this->apikey 				= $apikey;
 		$this->token 				= $token;
-		$this->organization_id 		= $organization_id;
 	}
 }
 class TrelloCard extends Trello {
 	protected $shortlink_code;
-	function __construct ( $apikey, $token, $organization_id, $shortlink_code) {
-		parent::__construct ( $apikey, $token, $organization_id );
+	function __construct ( $apikey, $token, $shortlink_code) {
+		parent::__construct ( $apikey, $token );
 		$this->shortlink_code = $shortlink_code;
 	}
 	public function findDuplicateComment( $text ) {

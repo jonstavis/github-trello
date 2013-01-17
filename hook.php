@@ -13,7 +13,7 @@ $content = json_decode(urldecode($_POST['payload']),true);
 if (sizeof($content['commits'])>0) {
 	foreach ($content['commits'] as $commit) {
 		if (preg_match('/.*trello\.com\/c\/([0-9A-Za-z]+)/', $commit['message'], $matches)) {
-			$a = new TrelloCard($apikey, $token, $organization_id, $matches[1], $matches[2]);
+			$a = new TrelloCard($apikey, $token, $matches[1], $matches[2]);
 			$files['modified'] = sizeof($commit['modified']);
 			$files['added'] = sizeof($commit['added']);
 			$files['removed'] = sizeof($commit['removed']);
