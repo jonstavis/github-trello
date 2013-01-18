@@ -9,4 +9,4 @@ This is a service hook for Trello that posts a comment to a card if you include 
 
 When commit code, if you include a Trello short link (looks like **https://trello.com/c/xxxxxxx**), a comment will be posted to the card referenced with a short message about how many files were added, removed or modified as well as a link to the commit on Github.
 
-[[commit.png]]
+![Commit](https://raw.github.com/ehedaya/github-trello/master/commit.png)
