@@ -17,7 +17,7 @@ class TrelloCard extends Trello {
 		$this->shortlink_code = $shortlink_code;
 	}
 	public function findDuplicateComment( $text ) {
-		if ($this->comments) {
+		if (!$this->comments) {
 			$this->getComments();
 		}
 		if (sizeof($this->comments)>0) {
