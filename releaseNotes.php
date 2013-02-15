@@ -9,7 +9,7 @@ $b = new TrelloBoard($apikey, $token, $board_id);
 <!doctype html>
 <html>
 	<head>
-	    <link rel="stylesheet" type="text/css" href="components/bootstrap/docs/assets/css/bootstrap.css"/>		
+	    <link rel="stylesheet" type="text/css" href="bootstrap/docs/assets/css/bootstrap.css"/>		
 	    <style type="text/css">
 	    	li { margin: 1em 0; padding: 1em 0; border-bottom: 1px solid #ccc; }
 	    	a { color: black; }

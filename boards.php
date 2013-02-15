@@ -6,7 +6,7 @@ $b = new Trello($apikey, $token );
 <!doctype html>
 <html>
 	<head>
-	    <link rel="stylesheet" type="text/css" href="components/bootstrap/docs/assets/css/bootstrap.css"/>			
+	    <link rel="stylesheet" type="text/css" href="bootstrap/docs/assets/css/bootstrap.css"/>			
 	</head>
 	<body>
 		<div class="container">
